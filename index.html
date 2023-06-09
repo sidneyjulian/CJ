@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head> 
-  <title>CJ's Photos</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+    <title>CJ's Photos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to CJ's Photos!</h1>
-  </header>
-  <nav>
-    <ul id="menu">
-      <li><a href="#menu-section">Menu</a></li>
-      <li><a href="#order-section">Order Now</a></li>
-      <li><a href="#calendar-section">Events</a></li>
-      <li><a href="#about-section">About Us</a></li>
-      <li><a href="#gallery-section">Gallery</a></li>
-    </ul>
-  </nav>
-  <section id="menu-section">
-    <h2>Our Menu</h2>
-    <!-- Menu items will be here -->
-  </section>
-  <section id="order-section">
-    <h2>Order Now</h2>
-    <!-- Order form will be here -->
-  </section>
-  <section id="calendar-section">
-    <h2>Upcoming Events</h2>
-    <!-- Calendar will be here -->
-    <div id="calendar"></div>
-  </section>
-  <section id="about-section">
-    <h2>About Us</h2>
-    <h3>About Tavious</h3>
-    <p> <!-- Description about Tavious here --> </p>
-    <h3>Our Mission</h3>
-    <p> <!-- Description about the mission here --> </p>
-  </section>
-  <section id="gallery-section">
-    <h2>Our Gallery</h2>
-    <div class="gallery">
-        <!-- Image tags here -->
-    </div>
-  </section>
-  <script src="script.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <!-- replace # with actual image links -->
+        <div class="image-container">
+            <img src="#" alt="Gallery Image 1">
+            <img src="#" alt="Gallery Image 2">
+            <!-- Add more images as required -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About CJ's Photos</h2>
+        <p>Your description here.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="calendar">
+        <h2>Events Calendar</h2>
+        <div id="calendar-container"></div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
