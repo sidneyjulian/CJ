@@ -4,8 +4,17 @@
     <title>CJ's Photos</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
   
-
+    <script type="module">
+        import Lightbox from './photoswipe-lightbox.esm.js';
+        const lightbox = new Lightbox({
+          gallery: '#my-gallery',
+          children: 'a',
+          pswpModule: () => import('./photoswipe.esm.js')
+        });
+        lightbox.init();
+        </script>
 
 </head>
 <body>
