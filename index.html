@@ -28,6 +28,22 @@
                 <!-- Add more images as required -->
             </div>
         </div>
+<!-- Add to your "Gallery" section -->
+<div class="gallery">
+    <img src="image1.jpg" alt="Image 1" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="image2.jpg" alt="Image 2" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <!-- Add more images as needed -->
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="modal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <img src="image1.jpg" alt="Image 1" class="modal-image">
+        <img src="image2.jpg" alt="Image 2" class="modal-image">
+        <!-- Add more images as needed -->
+    </div>
+</div>
 
         <!-- Event 2 -->
         <!-- Add more events as required -->

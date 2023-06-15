@@ -15,3 +15,28 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
 // For the calendar, you'll need to implement this yourself or use a library like FullCalendar
 
+var slideIndex = 1;
+
+function openModal() {
+    document.getElementById('modal').style.display = "block";
+    showSlides(slideIndex);
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = "none";
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("modal-image");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
