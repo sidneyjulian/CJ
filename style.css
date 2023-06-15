@@ -97,7 +97,7 @@ section {
 .modal-content .modal-image {
     margin: auto;
     display: none;
-    width: 100%;
+    width: 20%;
     max-width: 700px;
 }
 
